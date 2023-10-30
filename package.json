@@ -8,6 +8,9 @@
     "name": "Some Web Media",
     "url": "https://github.com/somewebmedia"
   },
+  "scripts": {
+     "deploy": "aws s3 sync --delete ./dist s3://files.cmcc.it/js/hc-sticky/"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
